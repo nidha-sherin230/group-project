@@ -1,0 +1,146 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #eee;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+}
+/* NAVBAR */
+nav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+.active {
+    color: #007BFF;
+    font-weight: bold;
+}
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+/* HEADINGS */
+section h2 {
+    margin-bottom: 15px;
+    color: #111;
+}
+
+/* PARAGRAPH */
+section p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* IMAGE */
+section img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* LISTS */
+.type, .step, .imp {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.type li, .step li, .imp li {
+    margin-bottom: 8px;
+}
+
+/* FLOWCHART */
+.flowchart {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.flow-step {
+    background: #f9f9f9;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 0.9rem;
+}
+
+/* BACK BUTTON */
+.back-home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.back-home a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-home a:hover {
+    color: #0056b3;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+}

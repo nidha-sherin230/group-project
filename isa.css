@@ -1,0 +1,29 @@
+/* ISA FLOWCHART IMPROVEMENT */
+.flow-step {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.flow-step:hover {
+    background: #007BFF;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* LIST STYLE IMPROVEMENT */
+.type li::marker,
+.step li::marker,
+.imp li::marker {
+    color: #007BFF;
+}
+
+/* SECTION HOVER EFFECT */
+section:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
