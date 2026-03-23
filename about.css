@@ -1,4 +1,120 @@
 /* RESET */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER 
+header {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+/* NAVBAR 
+nav {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #007BFF;
+}
+.active {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+
+/* ABOUT SECTION 
+.about-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* CONTAINER CARD 
+.about-container {
+    max-width: 700px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT 
+.about-container:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    transform: translateY(-5px);
+}
+
+/* TEXT
+.about-container h2 {
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* BUTTON 
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 18px;
+    text-decoration: none;
+    color: #fff;
+    background: #007BFF;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #0056b3;
+}
+
+/* FOOTER 
+ footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #eee;
+    color: #777;
+} */
+/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +127,14 @@ body {
     background: #ffffff;
     color: #333;
     line-height: 1.6;
+    padding: 10px;
 }
 
 /* HEADER */
 header {
     text-align: center;
     padding: 30px;
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
     font-weight: bold;
     border-bottom: 1px solid #eee;
 }
@@ -30,6 +147,7 @@ nav {
 .menu {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -65,9 +183,10 @@ nav {
 
 /* CONTAINER CARD */
 .about-container {
+    width: 100%;
     max-width: 700px;
     background: #fff;
-    padding: 40px;
+    padding: 20px;
     border-radius: 12px;
     border: 1px solid #eee;
     text-align: center;
