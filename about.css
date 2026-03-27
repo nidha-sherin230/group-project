@@ -34,7 +34,6 @@ header {
 
  /* CONTAINER CARD */
 .about-container {
-    width: 100%;
     max-width: 700px;
     background: #fff;
     padding: 40px;
@@ -85,4 +84,13 @@ footer {
     padding: 20px;
     border-top: 1px solid #eee;
     color: #777;
+    @media (max-width: 600px) {
+    .about-container {
+        padding: 20px;
+    }
+
+    .back-btn {
+        font-size: 0.9rem;
+        padding: 10px 14px;
+    }
 }
