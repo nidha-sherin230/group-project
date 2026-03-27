@@ -15,14 +15,13 @@ body {
 }
 
 /* HEADER */ 
-header { 
-    background: rgb(37, 35, 44); 
-    color: #f8f9fc; 
-    text-align: center; 
-    padding: 30px; font-size: 1.8rem; 
-    font-weight: bold; 
-    border-bottom: 1px solid #eee;
- }
+header {
+    background: rgb(37, 35, 44);
+    color: #f8f9fc;
+    text-align: center;
+    padding: clamp(20px, 5vw, 30px);
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+}
 /* ABOUT SECTION */
 .about-page {
     display: flex;
@@ -34,9 +33,10 @@ header {
 
  /* CONTAINER CARD */
 .about-container {
+    width: 100%;
     max-width: 700px;
     background: #fff;
-    padding: 40px;
+    padding: clamp(20px, 5vw, 40px);
     border-radius: 12px;
     border: 1px solid #eee;
     text-align: center;
@@ -51,11 +51,13 @@ header {
 /* TEXT */
 .about-container h2 {
     margin-bottom: 20px;
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem);
 }
 
 .about-container p {
     margin-bottom: 15px;
     color: #555;
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
 }
 
 /* BUTTON */
@@ -74,7 +76,7 @@ header {
 
 .back-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(73, 73, 73, 0.2);
+    box-shadow: 0 8px 18px #49494933;
 }
 
 
@@ -84,13 +86,23 @@ footer {
     padding: 20px;
     border-top: 1px solid #eee;
     color: #777;
-    @media (max-width: 600px) {
+}
+@media (max-width: 600px) {
+
+    .about-page {
+        padding: 10px;
+    }
+
     .about-container {
         padding: 20px;
+        border-radius: 10px;
     }
 
     .back-btn {
+        width: 100%;
+        text-align: center;
         font-size: 0.9rem;
-        padding: 10px 14px;
+        padding: 10px;
     }
+
 }
