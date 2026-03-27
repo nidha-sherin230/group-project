@@ -11,23 +11,25 @@ body {
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
-/* HEADER */
-header {
-    text-align: center;
-    padding: 40px 20px;
+/* HEADER */ 
+header { 
+    background: rgb(37, 35, 44); 
+    color: #f8f9fc; 
+    text-align: center; 
+    padding: 30px;
     border-bottom: 1px solid #eee;
-}
+ }
 
 header h1 {
-    font-size: 2.5rem;
+    color: #f8f9fc;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     margin-bottom: 10px;
 }
 
 header p {
-    color: #666;
+    color: #909090;
 }
 /* NAVBAR */
 nav {
@@ -47,17 +49,21 @@ nav {
 
 .menu a {
     display: block;
-    padding: 15px 20px;
+    padding: 10px 18px;
+    margin: 5px;
     text-decoration: none;
     color: #333;
     transition: 0.3s;
+    position: relative;
 }
 
 .menu a:hover {
-    color: #007BFF;
+    background: #f3e7ff;
+    border-radius: 8px;
+    color: #8e2de2;
 }
 .active {
-    color: #007BFF;
+    color: #8e2de2;
     font-weight: bold;
 }
 /* SECTIONS */
@@ -67,7 +73,35 @@ section {
     padding: 20px;
     background: #fff;
     border: 1px solid #eee;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+    position: relative;
+}
+section:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 
+        -8px -8px 20px rgba(142, 45, 226, 0.18),
+         8px 8px 20px rgba(255, 110, 196, 0.18);
+}
+section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    padding: 2px;
+    background: linear-gradient(135deg, #8e2de2, #ff6ec4);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+section:hover::before {
+    opacity: 1;
 }
 
 /* HEADINGS */
@@ -78,6 +112,7 @@ section h2 {
 
 /* PARAGRAPH */
 section p {
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     margin-bottom: 15px;
     color: #555;
 }
@@ -114,10 +149,10 @@ section img {
 
 .flow-step {
     background: #f9f9f9;
-    padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
+    padding: 8px 12px;
 }
 
 /* BACK BUTTON */
